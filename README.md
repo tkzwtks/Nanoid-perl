@@ -1,3 +1,4 @@
+[![Actions Status](https://github.com/tkzwtks/Nanoid-perl/workflows/test/badge.svg)](https://github.com/tkzwtks/Nanoid-perl/actions)
 # NAME
 
 Nanoid - Perl implementation of [nanoid](https://github.com/ai/nanoid)
