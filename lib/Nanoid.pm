@@ -24,12 +24,16 @@ sub generate {
 
     my $alphabet_size = length $alphabet;
 
+    if ( $size <= 0 ) {
+        croak 'size must be greater than zero';
+    }
+
     if ( $alphabet_size == 0 || $alphabet_size > 255 ) {
         croak 'alphabet must not empty and contain no more than 255 chars';
     }
 
     my @alphabet_array = split( '', $alphabet );
-    my $mask = ( 2 << log( $alphabet_size - 1 ) / log(2) ) - 1;
+    my $mask = ( 2 << ( log( $alphabet_size - 1 ) / log(2) ) ) - 1;
 
     my $step = ceil( 1.6 * $mask * $size / $alphabet_size );
     my $id   = '';
