@@ -29,7 +29,7 @@ sub generate {
     }
 
     my @alphabet_array = split( '', $alphabet );
-    my $mask = ( 2 << log( $alphabet_size - 1 ) / log(2) ) - 1;
+    my $mask = ( 2 << ( log( $alphabet_size - 1 ) / log(2) ) ) - 1;
 
     my $step = ceil( 1.6 * $mask * $size / $alphabet_size );
     my $id   = '';
