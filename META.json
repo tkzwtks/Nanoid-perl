@@ -64,7 +64,7 @@
          "web" : "https://github.com/tkzwtks/Nanoid-perl"
       }
    },
-   "version" : "0.01",
+   "version" : "0.02",
    "x_serialization_backend" : "JSON::PP version 2.27300",
    "x_static_install" : 1
 }
