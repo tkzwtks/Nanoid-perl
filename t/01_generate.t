@@ -38,4 +38,10 @@ subtest 'invalid alphabets' => sub {
     }, qr/alphabet must not empty and contain no more than 255 chars/;
 };
 
+subtest 'invalid size parameter' => sub {
+    like dies {
+        Nanoid::generate( size => 0, alphabet => 'a' x 256 );
+    }, qr/size must be greater than zero/;
+};
+
 done_testing;

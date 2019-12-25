@@ -24,6 +24,10 @@ sub generate {
 
     my $alphabet_size = length $alphabet;
 
+    if ( $size <= 0 ) {
+        croak 'size must be greater than zero';
+    }
+
     if ( $alphabet_size == 0 || $alphabet_size > 255 ) {
         croak 'alphabet must not empty and contain no more than 255 chars';
     }
