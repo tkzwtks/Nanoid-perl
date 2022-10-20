@@ -12,7 +12,7 @@ jobs:
     strategy:
       matrix:
         os: ['ubuntu-latest', 'macOS-latest', 'windows-latest']
-        perl: ['5.30.0', '5.28.0', '5.20.2']
+        perl: ['5.30.0', '5.28.0', '5.20.2', '5.01.0'']
         exclude:
           - os: windows-latest
             perl: '5.20.2'
